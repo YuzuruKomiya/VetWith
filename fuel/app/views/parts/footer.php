@@ -26,6 +26,7 @@
 				<p id="copyright">
 					&copy; 2015 VetWith（ベットウィズ）
 				</p>
+				<div class="fb-like" data-href="http://vetwith.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
 				<p id="poweredby">
 					Icon made by
 					<a href="http://buditanrim.co" title="Budi Tanrim">Budi Tanrim</a>
