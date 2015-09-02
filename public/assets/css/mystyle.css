@@ -1,0 +1,588 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015/06/14, 16:58:56
+    Author     : yuduru
+*/
+
+
+ * 
+ {
+ box-sizing: border-box;
+}
+html
+{
+    overflow-y: scroll;
+    height: 100%;
+}
+body
+{
+    margin: 0;
+    padding-top: 80px;
+    background-color: #e2dcd5;
+    height: 100%;
+}
+
+/* nabver */
+.navbar
+{
+    background-color: #f3f3f3;
+}
+
+.navbar-brand
+{
+    font-size: 200%;
+}
+/* nabver */
+
+#wrapper
+{
+    height: auto;
+    /* フッターの高さ分だけ、ネガティブインデントを指定 */
+    min-height: 100%;
+    margin: 0 auto -280px;
+    /* フッターの高さ分だけ、パディングを指定 */
+    padding: 0 0 280px;
+}
+
+#contentsholder
+{
+    box-shadow: 0 0 10px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+#footer
+{
+    text-align: center;
+    height: 280px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h2#sublogo
+{
+    font-size: 250%;
+}
+
+#sublogo > a
+{
+    color: #000;
+}
+
+#footerlist > li
+{
+    padding: 10px;
+}
+
+#copyright
+{
+    font-size: 90%;
+}
+
+#poweredby
+{
+    font-size: 70%;
+    margin-top: 30px;
+}
+
+.boxpaddingsmall
+{
+    padding: 20px 40px;
+}
+
+.detailinput
+{
+    margin-bottom: 30px;
+}
+.offerheader
+{
+    background-color: #f3f3f3;
+    background-size: cover;
+    background-position: center 60%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.offerheadercontents
+{
+    position: relative; 
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.offercontents
+{
+    box-shadow: 0 0 10px;
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+}
+.offermaincontents
+{
+    background-color: #fff;
+}
+
+.offermaincontents > img
+{
+    width: 100%;
+}
+
+.offersubcontents
+{
+    padding: 20px 40px;
+}
+
+.offerregister
+{
+    padding-bottom: 40px;
+}
+
+.offertextarea
+{
+    margin-bottom: 30px;
+}
+
+.employbox
+{
+    width: 90%;
+    border: 3px solid #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.topic
+{
+    color: #47a89c;
+}
+
+.fukidashi
+{
+    position: relative;
+    background: #ffffff;
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #f3f3f3;
+    border-radius: 10px;
+}
+.fukidashi:after
+{
+    content: '';
+    position: absolute;
+    border-bottom: 50px solid #ffffff;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    top: -50px;
+    left: 10px;
+}
+.fukidashi:before
+{
+    content: '';
+    position: absolute;
+    border-bottom: 50px solid #f3f3f3;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    top: -60px;
+    left: 10px;
+}
+
+.fukidashiwrapper
+{
+    padding: 30px;
+    position: relative;
+}
+
+ul.affix {
+    position: fixed;
+    top: 180px;
+    width: 360px;
+}
+ul.affix-top {
+    position: static;
+}
+ul.affix-bottom {
+    position: absolute;
+}
+
+/* First level of nav */
+.side-nav {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top:    5px;
+    padding-bottom: 20px;
+    background-color: #fdcea0;
+    border-radius: 10px;
+}
+ 
+/* All levels of nav */
+.sidebar .nav > li{
+    padding: 0px 50px;
+}
+.sidebar .nav > li > a {
+    display: block;
+    color: #000;
+}
+
+.sidebar .nav > li > a:hover,
+.sidebar .nav > li > a:focus {
+    text-decoration: none;
+    color: #47a89c;
+    background-color: #e5e3e9;
+    border-left: 4px solid #47a89c;
+}
+.sidebar .nav > .active > a,
+.sidebar .nav > .active:hover > a,
+.sidebar .nav > .active:focus > a {
+    font-weight: bold;
+    color: #47a89c;
+    background-color: transparent;
+    border-left: 4px solid #47a89c;
+}
+
+.sidebar li > a { padding: 5px 10px; }
+
+#featureimage
+{
+    border: 10px solid #fdcea0;
+    border-radius: 10px;
+}
+#representativeimage
+{
+    border: 10px solid #fdcea0;
+    border-radius: 10px;
+    width: 180px;
+}
+
+div .anken
+{
+    position: relative;
+    margin: 20px 0 60px;
+    padding: 0;
+    border-radius: 8px;
+    border: 5px #fdcea0 solid;
+    background-color: #fff;
+}
+
+.anken .prefecture
+{
+    position: absolute;
+    margin: 0;
+    padding: 1px 1px 20px 1px;
+    width: 120px;
+    top: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.anken .prefecture > a
+{
+    font-size: 160%;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #47a89c;
+}
+
+.anken .prefecture > a:hover
+{
+    color: #47a89c;
+}
+
+.anken h3.catchcopy
+{
+    width: 100%;
+    padding: 2px 10px;
+}
+
+h2.hospitalname
+{
+    font-size: 120%;
+    background-color: #fdcea0;
+    margin: 0;
+    padding: 5px 0 5px 10px;
+    height: 35px;
+    z-index: 1;
+}
+
+h2.hospitalname a
+{
+    color: #333;
+}
+
+h2.hospitalname a:hover
+{
+    color: #47a89c;
+}
+
+.anken td,th
+{
+    text-align: left;
+    padding: 5px;
+}
+
+.anken #searchimage
+{
+    width: 300px;
+}
+
+.anken div.message
+{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #47a89c;
+    border-radius: 10px;
+    background-color: #f3f3f3;
+}
+
+.pagination
+{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+
+form img.thumb {
+    margin:5px 10px;
+    max-width:160px;
+    vertical-align:bottom;
+}
+
+.sampleimage
+{
+    width: 300px;
+}
+
+#mainvisual
+{
+    position: relative;
+    min-height: 80vh;
+    background-color: #fff;
+    background-image: url(../img/top/mainvisual.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#subvisual
+{
+    position: relative;
+    min-height: 350px;
+    background-color: #fff;
+    background-image: url(../img/top/dog_l.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainvisual .content .subvisual
+{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.maininner
+{
+    position: relative;
+    min-height: 600px;
+}
+
+.subinner
+{
+    position: relative;
+    min-height: 200px;
+}
+
+.inner1
+{
+    position: relative;
+    min-height:400px;
+    padding-bottom: 30px;
+}
+
+.inner2
+{
+    position: relative;
+    min-height:400px;
+    padding-bottom: 30px;
+}
+
+.maincopy
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 500px;
+    margin: -250px 0px 0px -300px;
+    text-align: center;
+}
+
+.subcopy
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 500px;
+    margin: 0px 0px 0px -300px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 7px #000;
+}
+
+.subcatchcopy
+{
+    margin-bottom: 40px;
+}
+
+.free
+{
+    font-size: 200%;
+    border: 2px #fff solid;
+    padding: 10px 30px;
+}
+
+p.shadowtextwhite
+{
+    color: #fff;
+    text-shadow: 0 0 7px #000;
+}
+
+h1#mainlogo
+{
+    font-size: 450%;
+    color: #fff;
+    text-shadow: 0 0 7px #000;
+}
+
+#mainlogo > small
+{
+    font-size: 40%;
+    color: #fff;
+    text-shadow: 0 0 7px #000;
+}
+
+#mainsearchbox
+{
+    margin-top: 110px;
+}
+
+.topsubcontents
+{
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+#topcircleimage
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 2px #333 solid;
+}
+
+.toplettersvetwith
+{
+    color: #A07A60;
+}
+
+.toplettersstudents
+{
+    color: #47a89c;
+}
+
+.toplettersclinics
+{
+    color: #2196f3;
+}
+
+.scopy > h3
+{
+    font-size: 180%;
+    margin: 10px 0;
+    padding: 20px 0;
+    background-image: url(../img/top/s_verify.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-shadow: 3px 3px 4px #fff;
+}
+
+.ccopy > h3
+{
+    font-size: 180%;
+    margin: 10px 0;
+    padding: 20px 0;
+    background-image: url(../img/top/c_verify.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-shadow: 3px 3px 4px #fff;
+}
+
+.topmailform
+{
+    padding: 80px 0;
+}
+
+.topmailformguide
+{
+	position: relative;
+	display: inline-block;
+	margin: 0 15px 40px;
+        padding: 15px;
+	width: auto;
+	min-width: 100%;
+	line-height: 34px;
+	color: #19283C;
+	text-align: center;
+	background: #fff;
+	border: 3px solid #19283C;
+        border-radius: 10px;
+	z-index: 0;
+}
+
+.topmailformguide:before
+{
+	content: "";
+	position: absolute;
+	bottom: -8px; left: 50%;
+	margin-left: -9px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 9px 9px 0 9px;
+	border-color: #fff transparent transparent transparent;
+	z-index: 0;
+}
+
+.topmailformguide:after
+{
+	content: "";
+	position: absolute;
+	bottom: -12px; left: 50%;
+	margin-left: -10px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 10px 0 10px;
+	border-color: #19283C transparent transparent transparent;
+	z-index: -1;
+}
+
+.termslist
+{
+    list-style-type: decimal;
+}
+
+.termslist > li
+{
+    margin-bottom: 10px;
+}

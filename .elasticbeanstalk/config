@@ -1,0 +1,16 @@
+[global]
+ApplicationName=vetwith
+AwsCredentialFile=c:/Users/yuduru\.elasticbeanstalk\aws_credential_file
+DevToolsEndpoint=git.elasticbeanstalk.ap-northeast-1.amazonaws.com
+EnvironmentName=vetwith
+EnvironmentTier=WebServer::Standard::1.0
+EnvironmentType=SingleInstance
+InstanceProfileName=
+OptionSettingFile=c:\Users\yuduru\work\fuelphp\.elasticbeanstalk\optionsettings.vetwith
+RdsDeletionPolicy=Snapshot
+RdsEnabled=Yes
+RdsSourceSnapshotName=
+Region=ap-northeast-1
+ServiceEndpoint=https://elasticbeanstalk.ap-northeast-1.amazonaws.com
+SolutionStack=64bit Amazon Linux 2015.03 v2.0.0 running PHP 5.6
+
