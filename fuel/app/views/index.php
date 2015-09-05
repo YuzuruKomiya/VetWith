@@ -46,7 +46,7 @@ $(function () {
 		<?php echo $header; ?>
 		<div class="container-fluid mainvisual" id="mainvisual">
 			<div class="row maininner">
-				<div class="maincopy">
+				<div class="maincopy col-xs-12 col-md-8 col-md-offset-2">
 					<h1 id="mainlogo">
 						<span style="color: #fdcea0;">V</span>et<span style="color: #fdcea0;">W</span>ith <small>(beta)</small>
 					</h1>
