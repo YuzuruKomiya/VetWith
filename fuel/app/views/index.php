@@ -71,7 +71,7 @@ $(function () {
 			</div>
 		</div>
 		<p class="text-center boxpaddingsmall">
-			<?php echo Asset::img('top/student.png', array('id' => 'topcircleimage')); ?>
+			<?php echo Asset::img('top/student.png', array('class' => 'topcircleimage')); ?>
 		</p>
 		<div class="container">
 			<div class="row">
@@ -141,7 +141,7 @@ $(function () {
 			</div>
 		</div>
 		<p class="text-center boxpaddingsmall">
-			<?php echo Asset::img('top/doctor.jpg', array('id' => 'topcircleimage')); ?>
+			<?php echo Asset::img('top/doctor.jpg', array('class' => 'topcircleimage')); ?>
 		</p>
 		<div class="container">
 			<div class="row">
