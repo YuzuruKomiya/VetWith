@@ -6,8 +6,7 @@ VetWith program is coded by PHP.
 VetWith（ベットウィズ）は「動物病院に勤務したい獣医学生」と「獣医学生を採用したい動物病院」を結びつける、完全無料の求人掲載プラットフォームです。
 PHPでコーディングされています。
 
-## What you can do with VetWith.
-## できること
+## What you can do with VetWith. / できること
 
 1.Animal clinics post a job offer.  
 2.Veterinary students apply for the offer.  
@@ -17,8 +16,7 @@ PHPでコーディングされています。
 2.学生は掲載された求人に応募します。  
 3.応募後、メールもしくは電話で動物病院と学生は見学、実習の予定を立てます。
 
-## 主なファイルの内包する機能
-## What each main file plays a role of.
+## What each main file plays a role of. / 主なファイルの内包する機能
 ### APPPATH/classes/controller/clinic/auth.php
 * Authentication via email and member registration for animal clinics.  
 * 動物病院の会員登録のためのメール認証および会員登録。
