@@ -42,7 +42,7 @@ PHPでコーディングされています。
 * 獣医学生のマイページ。登録したブックマークのチェック。
 
 ### APPPATH/classes/controller/bookmark.php
-* A part of ajax function to register a offer for bookmark without page transition.  
+* A part of a ajax function to register a offer for bookmark without page transition.  
 * ページ遷移なしでブックマーク登録/解除するためのajaxの一部。
 
 ### APPPATH/classes/controller/contact.php
