@@ -38,7 +38,7 @@ PHPでコーディングされています。
 * 獣医学生のログアウト。
 
 ### APPPATH/classes/controller/clinic/mypage.php
-* A veterinary students private page to check bookmarked offer.  
+* A veterinary students private page to check bookmarked offers.  
 * 獣医学生のマイページ。登録したブックマークのチェック。
 
 ### APPPATH/classes/controller/bookmark.php
