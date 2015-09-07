@@ -3,7 +3,7 @@
 <?php endif; ?>
 
 <div class="form-group row">
-	<div class="col-xs-4">
+	<div class="col-xs-12 col-md-4">
 	<?php echo Form::open('clinic/auth/login'); ?>
 	<p>
 		<?php echo Form::label('ユーザー名、もしくはメールアドレス', 'c_username'); ?>

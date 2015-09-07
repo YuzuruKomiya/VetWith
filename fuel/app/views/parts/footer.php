@@ -8,8 +8,10 @@
 				</h2>
 				<p>
 					<?php echo Form::open(array('action' => 'offers/search', 'method' => 'get', 'class' => 'form-inline')); ?>
-					<?php echo Form::input('q', Input::get('q'), array('class' => 'form-control input-sm', 'placeholder' => '地名や設備など')); ?>
-					<?php echo Form::submit('submit', '求人検索', array('class' => 'btn btn-primary btn-sm')); ?>
+					<div class="form-group">
+						<?php echo Form::input('q', Input::get('q'), array('class' => 'form-control input-sm', 'placeholder' => '地名や設備など')); ?>
+						<?php echo Form::submit('submit', '求人検索', array('class' => 'btn btn-primary btn-sm')); ?>
+					</div>
 					<?php echo Form::close(); ?>
 				</p>
 				<ul class="list-inline" id="footerlist">
